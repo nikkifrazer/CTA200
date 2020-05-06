@@ -1,0 +1,538 @@
+    1  /cita/local/bin/passwd
+    2  exit
+    3  /cita/local/bin/passwd
+    4  exit
+    5  k
+    6  exit
+    7  k
+    8  VNC serve
+    9  VNCserver
+   10  vncserver
+   11  exit
+   12  vncserver
+   13  k
+   14  cosmo4.cita.utoronto.cacosmo4.cita.utoronto.ca
+   15  k
+   16  exit
+   17  ssh cosmo4
+   18  exit
+   19  vncserver
+   20  exit
+   21  ssh cosmo4
+   22  exit
+   23  k
+   24  jobs
+   25  exit
+   26  whoami
+   27  pwd
+   28  cd
+   29  cd/
+   30  cd /
+   31  cd
+   32  cd - murray
+   33  ls -la
+   34  cd -student13
+   35  cd - student13
+   36  ls -la
+   37  cd /home/cta200
+   38  finger cta200
+   39  finger student13
+   40  cd /home/cta200
+   41  cd /mnt/scr
+   42  cd student04
+   43  pwd
+   44  cd 
+   45  cd ..
+   46  ls
+   47  find -name '*auss*'
+   48  pwd
+   49  cd /home/cta200
+   50  pwd
+   51  ls
+   52  find -name '*auss*'
+   53  pwd
+   54  mkdir /mnt/scratch-lustre/student13/gauss2d
+   55  pwd
+   56  history
+   57  cp -av /home/cta200/Reserach/gauss2d /mnt/scratch-lustre/$USER/gauss2d
+   58  cp -av /home/cta200/Research/gauss2d /mnt/scratch-lustre/$USER/gauss2d
+   59  pwd
+   60  mkdir /mnt/scratch-lustre/student13/gauss2d
+   61  history
+   62  pwd
+   63  cd /mnt/scratch-lustre/stuent13/gauss2d
+   64  cd /mnt/scratch-lustre/student13/gauss2d
+   65  pwd
+   66  ls -la
+   67  less gauss2d.cc
+   68  pwd
+   69  echo $USER
+   70  less gauss2d.caa
+   71  is
+   72  Is
+   73  Is -lrt
+   74  is -lrt
+   75  pwd
+   76  is
+   77  I
+   78  ls
+   79  cd gauss2d
+   80  pwd
+   81  ls
+   82  is
+   83  Is
+   84  I
+   85  less gauss2d.cc
+   86  cat MakeFile
+   87  cat Makefile
+   88  vim plot.py
+   89  gedit plot.py
+   90  pwd
+   91  g++ gauss2d.cc -o gauss2d
+   92  ls -lt
+   93  ls -la
+   94  /gauss2d > data.txt
+   95  ./gauss2d > data.txt
+   96  ls - la
+   97  ls -la
+   98  module load python/2.7.12./script.py
+   99  module load gcc/5.4.0
+  100  module load python/2.7.12
+  101  ./script.py
+  102  head gauss2d.cc
+  103  head gauss2d
+  104  ls -la
+  105  head plot.py
+  106  ./plot.py
+  107  ls -la
+  108  ./plot.py data.txt
+  109  chmod u+x plot.py
+  110  ./gauss2d > data.txt; ./plot/py data.txt
+  111  ./gauss2d > data.txt; ./plot.py data.txt
+  112  ./gauss2d | ./plot.py
+  113  ./gauss2d -help
+  114  ls -la
+  115  head plot.py
+  116  gedit plot.py
+  117  ./gauss2d -help
+  118  option
+  119  Is gauss2d
+  120  Is [gauss2d]
+  121  ./gauss2d -help
+  122  ./gauss2d -xdim 30
+  123  ./gauss2d -xdim 30 > data30.txt
+  124  ls -la
+  125  ./plot.py data30.txt
+  126  ./gauss2d -help
+  127  ./gauss2d -xsigma 2 > datasigma.txt
+  128  ls -la
+  129  ./plot.py datasigma.txt
+  130  ./gauss2d -help
+  131  k
+  132  .git -- .*
+  133  .git --
+  134  git config --global user.name "Nikki F" 
+  135  git config --global user.email n.frazer@mail.utoronto.ca 
+  136  cd ~
+  137  mdir -p repos/gauss2d.git
+  138  git init --bare
+  139  cd /mnt/scratch-lustre/$USER/gauss2d
+  140  git init
+  141  echo "*.o" > .gitignore
+  142  ls -la
+  143  git add gauss2d.cc Makefile plot.py .gitignore
+  144  pwd
+  145  ls -la
+  146  pwd
+  147  cd gauss2d
+  148  pwd
+  149  ls -la
+  150  git add gauss2d.cc Makefile plot.py .gitignore
+  151  pwd
+  152  git add gauss2d.cc Makefile plot.py .gitignore
+  153  history
+  154  pwd
+  155  ls -la
+  156  cd ..
+  157  ls -la
+  158  cp gauss2d/* .
+  159  ls -la
+  160  rm -rf gauss2d
+  161  ls -la
+  162  git add gauss2d.cc Makefile plot.py .gitignore
+  163  git status
+  164  git commit -m "Working 2D Gaussian array generation code and plotting script" 
+  165  git log
+  166  git remote add origin /home/$USER/repos/gauss2d.git
+  167  cat .git/config
+  168  git push --set-upstream origin master
+  169  history
+  170  history | grep
+  171  history | grep git
+  172  pushd
+  173  cd ..
+  174  pwd
+  175  cd .
+  176  pwd
+  177  cd /mnt/scratch-lustre/student13/gauss2d
+  178  pwd
+  179  ls -lad
+  180  ls -la
+  181  git push --set-upstream origin master
+  182  git remote add origin /home/$USER/repos/gauss2d.git
+  183  cat .git/config
+  184  git push --set-upstream origin master
+  185  pwd
+  186  git push --set-upstream origin master
+  187  cd /home/cta200
+  188  pwd
+  189  ls -la
+  190  cd /mnt/scratch-lustre/$USER/gauss2d
+  191  pwd
+  192  ls -la
+  193  git push --set-upstream origin master
+  194  history
+  195  pwd
+  196  mkdir -p repos/gauss2d.git
+  197  git push --set-upstream origin master
+  198  history
+  199  pwd
+  200  cd ..
+  201  pwd
+  202  ls -la
+  203  cd ..
+  204  pwd
+  205  cd ..
+  206  pwd
+  207  cd ..
+  208  pwd
+  209  ls -la
+  210  cd ..
+  211  pwd
+  212  cd /home/cta200
+  213  pwd
+  214  ls -la
+  215  cd ..
+  216  pwd
+  217  ls -la
+  218  cd /mnt/scratch-lustre
+  219  ls -la
+  220  cd
+  221  ls -la
+  222  pwd
+  223  rm config HEAD
+  224  rmdir branches
+  225  rmdir hooks
+  226  rm -r branches
+  227  rm -r hooks
+  228  rmdir info
+  229  rm -r info
+  230  rmdir objects
+  231  rm -r objects
+  232  rmdir refs
+  233  rm -r refs
+  234  ls -la
+  235  rm config
+  236  cd ~
+  237  mkdir -p repos/gauss2d.git
+  238  cd repos/gauss2d.git
+  239  git init --bare
+  240  cd /mnt/scratch-lustre/$USER/gauss2d
+  241  git init
+  242  echo "*.o" > .gitignore
+  243  git add gauss2d.cc Makefile plot.py .gitignore
+  244  git status
+  245  git commit -m "Working 2D Gaussian array generation code and plotting script"
+  246  git log
+  247  git remote add origin /home/$USER/repos/gauss2d.git
+  248  cat .git/config
+  249  git push --set-upstream origin master
+  250  vim gauss2d.cc
+  251  gedit gauss2d.cc
+  252  gedit plot.py
+  253  git status
+  254  git diff
+  255  git add -u
+  256  git status
+  257  git comit -m "Added program description. Renamed sigma dev[iation]"
+  258  yes
+  259  git commit -m "Added program description. Renamed sigma dev[iation]"
+  260  gitk
+  261  exitexit
+  262  exit
+  263  cd
+  264  pwd
+  265  cd /home/student13/repos
+  266  pwd
+  267  mkdir -p repos/Assignment1.git
+  268  cd repos/Assignment1.git
+  269  git init --bare
+  270  pwd
+  271  rm -r repos
+  272  pwd
+  273  ls -la
+  274  cd ..
+  275  pwd
+  276  ls -la
+  277  cd ..
+  278  pwd
+  279  ls -la
+  280  cd repos/Assignment1.git
+  281  pwd
+  282  history
+  283  pwd
+  284  ls -la
+  285  cd repos/gauss2d.git
+  286  pwd
+  287  git remote add origin https://github.com/nikkifrazer/CTA200.git
+  288  git push -u origin master
+  289  git commit -m "Test Commit" 
+  290  pwd
+  291  ls -la
+  292  rm -rf Assignment1.git
+  293  pwd
+  294  ls -la
+  295  cd
+  296  ls -la
+  297  rm -r /repos/repos
+  298  cd repos
+  299  pwd
+  300  ls -la
+  301  rm -r repos
+  302  pwd
+  303  cd ~
+  304  pwd
+  305  mkdir -p repos/Assignment1.git
+  306  cd respos/Assignment1.git
+  307  cd repos/Assignment1.git
+  308  git init --bare
+  309  cd ~
+  310  pwd
+  311  mkdir ~/projects/Assignment1
+  312  pwd
+  313  mkdir projects
+  314  cd projects
+  315  pwd
+  316  cd
+  317  mkdir ~/projects/Assignment1
+  318  cd ~/projects/Assignment1
+  319  git clone ~/git/Assignment1.git/
+  320  git clone ~/repos/Assignment1.git/
+  321  git remote add origin https://github.com/nikkifrazer/CTA200.git
+  322  pwd
+  323  ls -la
+  324  cd
+  325  rm -r projects
+  326  pwd
+  327  ls -la
+  328  cd repos
+  329  ls -la
+  330  pwd
+  331  cd ..
+  332  cd projects
+  333  pwd
+  334  mkdir Assignment1
+  335  rm Assignment1
+  336  rm -r Assignment1
+  337  pwd
+  338  mkdir Assignement1
+  339  git init
+  340  cd Assignment1
+  341  cd Assignement1
+  342  git remote add origin https://github.com/nikkifrazer/CTA200.git
+  343  pwd
+  344  git commit -m "Test commit one"
+  345  git push -u origin master
+  346  git status
+  347  git log
+  348  ls -la
+  349  pwd
+  350  cd Assignement1
+  351  pwd
+  352  git init
+  353  git commit add origin https://github.com/nikkifrazer/CTA200.git
+  354  git remote add origin https://github.com/nikkifrazer/CTA200.git
+  355  git commit -m "Test Commit"
+  356  git add -u
+  357  git status
+  358  git commit -m "Commit Test"
+  359  git push -u origin master
+  360  pwd
+  361  cd
+  362  ls -la
+  363  cd repos
+  364  ls -la
+  365  cd Assignment1
+  366  cd Assignment1.git
+  367  pwd
+  368  git remote set-url origin "https://nikkifrazer@github.com/nikkifrazer/CTA200.git"
+  369  git remote -v
+  370  history
+  371  pwd
+  372  cd ..
+  373  pwd
+  374  mkdir A1Local
+  375  cd A1Local
+  376  pwd
+  377  git init
+  378  git remote set-url origin "https://nikkifrazer@github.com/nikkifrazer/CTA200.git"
+  379  git remote set-url origin https://nikkifrazer@github.com/nikkifrazer/CTA200.git
+  380  git remote set-url origin "https://nikkifrazer@gitub.com/nikkifrazer/CTA200.git"
+  381  pwd
+  382  gedit
+  383  ls -la
+  384  gedit
+  385  les -la
+  386  ls -la
+  387  gedit
+  388  ls -la
+  389  gedit average.c
+  390  gedit 
+  391  ls -la
+  392  gedit
+  393  ls -la
+  394  cd
+  395  cd gauss2d
+  396  cd/mnt/scratch-lustre/gauss2d
+  397  cd/mnt/scratch-lustre/gauss2d.git
+  398  cd /mnt/scratch-lustre/student13/gauss2d
+  399  ls -la
+  400  Makefile
+  401  gedit Makefile
+  402  cd
+  403  cd repos/A1Local
+  404  pwd
+  405  git remote add origin "https://nikkifrazer@github.com/nikkifrazer/CTA200.git"
+  406  git remote -v
+  407  git commit -m "Added README and MIT License file"
+  408  git add <LICENSE> <README.md> <README.md~> <average.c> <average.h> <main.c>
+  409  git commit
+  410  git add <LICENSE>
+  411  git add LICENSE
+  412  ls -la
+  413  git add README.md README.md~ average.c average.h main.c
+  414  ls -la
+  415  git commit
+  416  git commit -m "Added new files"
+  417  cd ~murray
+  418  cd CTA200/
+  419  ls -la
+  420  cd cta200h_2020
+  421  ls -la
+  422  cd CTA200H
+  423  ls -la
+  424  cd sandbox
+  425  ls -la
+  426  cd
+  427  pwd
+  428  cd repos
+  429  dir repos
+  430  ls -la
+  431  cd A1Local
+  432  ls -la
+  433  gedit main.c
+  434  gedit average.c
+  435  gedit averag.h
+  436  gedit average.h
+  437  who
+  438  juptyer notebook
+  439  jupyter notebook
+  440  jupyter notebook &
+  441  module load gcc/4.9.2 python/2.7.10
+  442  jupyter notebook &
+  443  jupyter notebook & 
+  444  jupyter notebook
+  445  cd
+  446  jupyter notebook
+  447  pwd
+  448  jupyter notebook
+  449  exit
+  450  gd
+  451  cd
+  452  ls -la
+  453  module load gcc/4.9.2 python/2.7.10
+  454  jupyter notebook
+  455  cd repos
+  456  pwd
+  457  git clone https://github.com/CITA/CTA200H
+  458  cd CTA200H
+  459  pwd
+  460  jupyter notebook
+  461  exit
+  462  cd
+  463  ls -la
+  464  cd repos
+  465  ls -la
+  466  cd CTA200H
+  467  ls -la
+  468  module load gcc/4.9.2 python/2.7.10
+  469  jupyter notebook
+  470  cd
+  471  cd repos
+  472  cd A1Local
+  473  pwd
+  474  ls -la
+  475  gedit
+  476  make
+  477  gedit Makefile
+  478  make
+  479  ./A1
+  480  gedit Makelist
+  481  pwd
+  482  gedit Makelist
+  483  Vi Makelist
+  484  vim Makelist
+  485  cd
+  486  cd repos
+  487  cd A1Local
+  488  pwd
+  489  ls -la
+  490  gedit Makefile
+  491  cat Makefile
+  492  cd
+  493  cd repos/gauss2d
+  494  ls -la
+  495  cd
+  496  ls -la
+  497  cd
+  498  cd repos
+  499  cd A1Local
+  500  ls -la
+  501  gedit Makefile
+  502  make
+  503  gedit Makefile
+  504  make
+  505  gedit Makefile
+  506  make
+  507  make -f Makefile
+  508  module load gcc/5.4.0
+  509  make -f Makefile
+  510  gedit Makefile
+  511  make -f Makefile
+  512  ls -la
+  513  m A1
+  514  m ./A1
+  515  ./A1
+  516  git status
+  517  git add A1
+  518  git add Makefile
+  519  git Add Makefile~
+  520  yes
+  521  git add Makefile~
+  522  git commit -m "Added the Makefile and it's output"
+  523  git log
+  524  git commit
+  525  pwd
+  526  ls -ls
+  527  ls -la
+  528  git push
+  529  gedit average.c
+  530  gedit main.c
+  531  make -f Makefile
+  532  gedit main.c
+  533  make -f Makefile
+  534  history
+  535  make -f Makefile
+  536  cd A1
+  537  ./A1
+  538  history > hist.txt
