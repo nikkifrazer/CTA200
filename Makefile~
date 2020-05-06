@@ -1,0 +1,7 @@
+#MakeFile A1
+#Command One
+A1: main.c average.c
+     gcc -o A1 main.c average.c -std=c99
+#Command Two
+clean:
+	-rm *.o
