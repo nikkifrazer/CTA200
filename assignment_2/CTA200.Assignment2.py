@@ -99,7 +99,7 @@ def how_many_iterations(x:int, y:int, iteration_count:int):
 def mandelbrot_scale(threshold, density):
     """
     Given a threshold, return a plot for a mandelbrot set,
-    calling upon the function divergent to supply the 
+    calling upon the function how_many_iterations to supply the 
     values of when an iteration of z diverges or converges.
     
     """
@@ -223,6 +223,8 @@ plt.xlabel('Time (days)')
 plt.ylabel('Population')
 plt.legend(["Susceptible","Infected","Recovered"])
 plt.figure()
+
+
 #parameter set four 
 beta = 5
 gamma = 0.10
