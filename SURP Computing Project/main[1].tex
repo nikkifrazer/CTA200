@@ -1,0 +1,163 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pythontex}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\setlength\parindent{0pt} %% Do not touch this
+
+%% -----------------------------
+%% TITLE
+%% -----------------------------
+\title{SURP Computing Project: Visualizing Galaxy
+Merger Trees} 
+
+\author{Nikki Frazer\\ 
+CTA200H\\ 
+Supervisor: Dr. Mubdi Rahman\\
+\textsc{University of Toronto}
+}
+
+\date{\today} 
+%% -----------------------------
+%% -----------------------------
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+% --------------------------
+% Start here
+% --------------------------
+% %%%%%%%%%%%%%%%%%%%
+\section*{Introduction}
+% %%%%%%%%%%%%%%%%%%%
+This computing project contains three parts: setting up a python environment, completing plotting exercises, and plotting galaxy merger trees. My python code will be split into two files because the project request one part to be coded in a Jupyter Notebook. The first will plot the requested figures during the plotting exercises, and the second will plot the requested figures in the galaxy merger tree section, using data drawn from online. 
+
+This \LaTeX{} document will answer questions from the computing project, and include and explain relevant plots. 
+
+% %%%%%%%%%%%%%%%%%%%
+\section*{1 Setting up your Development Environment}
+% %%%%%%%%%%%%%%%%%%%
+\subsection*{   2.}
+% %%%%%%%%%%%%%%%%%%%
+Question: Describe how you would install and remove a package via (a) conda and (b) pip.\\
+\\
+\textbf{pip} and \textbf{conda} are package managers for python. The instructions below will use the package flask as an example. \textbf{conda} installs packages within \textbf{conda} environments. Python environments allow you to have different versions of Python and packages in each environment, and also allows other users to test your application on their computers. After verifying that \textbf{conda} is installed, follow the prompts below to create an environment to install the package in: 
+\begin{center}
+\begin{tabular}{ l l }
+ conda create \textbf{--}name environmentexample flask \\ 
+ conda activate environmentexample \\  
+\end{tabular}
+\end{center} 
+
+To remove a package, when you are outside of the environment, type in the command: 
+\begin{center}
+\begin{tabular}{ l }
+ conda remove -n environmentexample flask \\ 
+\end{tabular}
+\end{center} 
+
+\textbf{pip} is a versatile package manager. It is included in most updated Python versions, but if not, it can be downloaded depending on which system you are running. To uninstall or install a Python package using \textbf{pip}, simply type the commands below: 
+\begin{center}
+\begin{tabular}{ l l }
+ pip install flask \\ 
+ pip uninstall flask \\  
+\end{tabular}
+\end{center}
+
+If you are using a shell, then you can add an exclamation point before \textbf{pip} for it to execute:
+\begin{center}
+\begin{tabular}{ l l }
+ !pip install flask \\ 
+ !pip uninstall flask \\  
+\end{tabular}
+\end{center}
+% %%%%%%%%%%%%%%%%%%%
+\subsection*{   3.}
+% %%%%%%%%%%%%%%%%%%%
+Question: Describe other settings in
+the .matplotlibrc file that would be useful to modify for plotting.\\
+\\
+The .matplotlibrc file allows users to save modifications in matplotlib, and have these modifications be recognized every time matplotlib is used. Other settings in the .matplotlibrc file that would be useful to modify for plotting include colour, axis and grid properties, and text and font properties. If you are creating plots for an academic journal, then editing the .matplotlibrc file to follow their style conventions of font, or using only colour-blind friendly colours, would be useful.\\
+For example:\\
+\textit{\#font.family  : sans-serif}\\
+This default could be changed to another font style. 
+
+% %%%%%%%%%%%%%%%%%%%
+\section*{2 Plotting Exercises}
+% %%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%
+\subsection*{   1.}
+% %%%%%%%%%%%%%%%%%%%
+Question: Describe the parameters that are needed for the Gaussian function
+beyond the x and y positions. Describe how you would make this a fully generic two dimensional Gaussian function\\
+\\
+In order to create a Gaussian function, the other parameters that are needed are mu, the mean, and sigma, the standard deviation, and the size of the desired plot, or number of x and y points to generate. To make this function fully generic, you would need to add the variable arguments mentioned above when defining the function. In addition, you would need to add arguments for the range of x and y. 
+ %%%%%%%%%%%%%%%%%%%
+\subsection*{   4.}
+% %%%%%%%%%%%%%%%%%%%
+Question: Describe why you would or would
+not use the “Jet” colour map over the “Viridis” colour map.\\
+\\
+The "jet" colourmap, referenced in Fig.~\ref{fig:mesh2} produces a lot of contrasting colours, whereas the colours in "viridis," reference in Fig.~\ref{fig:mesh3} are more blended together. However, "jet" also seems to highlight different aspects of the plot. For example, when plotting the 2D Gaussian with each colourmap, the eye is drawn to different parts of the plot: 
+\begin{figure}[H]
+\includegraphics{CTA200.Question4JET.pdf}
+\centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{Jet Colormap}
+    \label{fig:mesh2}
+\end{figure}
+\begin{figure}[H]
+\includegraphics{CTA200.Question4.pdf}
+\centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{Viridis Colormap}
+    \label{fig:mesh3}
+\end{figure}
+Therefore, one would use the "viridis" colormap over the "jet" colormap when one doesn't want unimportant features of their plot highlighted, as "jet" tends to do. 
+ %%%%%%%%%%%%%%%%%%%
+\subsection*{   7.}
+% %%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\includegraphics{CTA200.Question7.pdf}
+\centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+   \caption{Final Gaussian Function with Features}
+    \label{fig:FinalGaussian}
+\end{figure}
+
+%z = np.exp(-((X-mu)**2+(Y-mu)**2)/2.0*sigma**2)
+The plot above, Fig.~\ref{fig:FinalGaussian}, was generated by creating a two-dimensional heatmap of a Gaussian function, using equation~\ref{eq:gaussian}: 
+\begin{equation}
+\mathcal{N} = e^{-((X-mu)^2 + (Y-mu)^2)/2*sigma^2}
+\label{eq:gaussian}
+\end{equation}\\
+It shows a main axis of a Gaussian function, with a colorbar, and an inset axis plotted with noisy data. Both axes have random markers on them, and the plot shows a white arrow pointing from the center of the inset axis to the center of the main axis. 
+% %%%%%%%%%%%%%%%%%%%
+\section*{3 Plotting First Galaxy Merger Trees}
+% %%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%
+\subsection*{   4.}
+% %%%%%%%%%%%%%%%%%%%
+Question: Describe what this structure looks like. Which mergers look like major mergers?\\
+\begin{figure}[H]
+\includegraphics{CTA200.Galaxy.Tree.pdf}
+\centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+   \caption{Stellar Mass vs Redshift: Halos Connected to the Halo of Descendants}
+    \label{fig:galaxytree}
+\end{figure}
+The structure in Fig.~\ref{fig:galaxytree} looks roughly like a galaxy merger tree. There are branches, connecting to a main branch as the redshift approaches 10. Therefore, there appears to have been a major merger when the redshift value was around 9. 
+
+
+
+
+
+\end{document}
