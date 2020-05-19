@@ -64,6 +64,7 @@ plt.title('Question 4')
 ax = fig.add_axes([0.21,0.525,1/3,1/3])
 ax.imshow(noisy_z, cmap="jet", origin='lower', aspect='equal', extent=(-1, 1, -1, 1))
 ax.tick_params(axis='y', which='both', labelleft=False, labelright=True, labeltop=False)
+plt.savefig("CTA200.Question4.pdf")
 plt.show()
 
 
